@@ -1,7 +1,17 @@
-.landing {
+.landing, .gif-joke-page {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-top: 20vh;
 }
+
+button {
+    cursor: pointer;
+}
+
+.gif-container {
+    max-height: 30vh;
+    max-width: 50vw;
+}
+
