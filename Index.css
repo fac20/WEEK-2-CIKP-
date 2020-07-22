@@ -1,1 +1,29 @@
+.landing, .gif-joke-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20vh;
+}
 
+button {
+    cursor: pointer;
+}
+
+.gif-container {
+    display:flex;
+    justify-content: center;
+    max-height: 30vh;
+    max-width: 50vw;
+}
+
+.gif-container {
+    margin-bottom: 2rem;
+}
+
+.joke-container {
+    display: flex;
+    max-height: 20vh;
+    max-width: 60vw;
+    justify-content: center;
+}
