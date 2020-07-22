@@ -1,17 +1,20 @@
 # WEEK-2-CIKP-
-Your project this week is to build an app that queries at least two APIs and uses the results to update the DOM. There should be a way for the user to search, filter, sort or otherwise affect what is displayed.
+### Your project this week is to build an app that queries at least two APIs and uses the results to update the DOM. There should be a way for the user to search, filter, sort or otherwise affect what is displayed.
+
 What you choose to build and how you choose to display the data is entirely up to you!
-User Stories
+
+## User Stories
 A user story is a description of one or more features of a piece of software.
 Core Stories
-As a user, I want to:
-See an interesting mashup of different data
-Input information to change the displayed result
-View the app on all of my devices
-Since your app will be unique you will need to create your own user stories for more specific features.
-Stretch stories
-As an impatient user, I want to see some indication that data is loading
-As a confused user, I want to be told when something goes wrong
+#### As a user, I want to:
+- See an interesting mashup of different data
+- Input information to change the displayed result
+- View the app on all of my devices
+
+#### Since your app will be unique you will need to create your own user stories for more specific features.
+ ##### Stretch stories
+- As an impatient user, I want to see some indication that data is loading
+- As a confused user, I want to be told when something goes wrong
 Acceptance Criteria
 Query at least two APIs using fetch
 Dynamic content generated with JS
