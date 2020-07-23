@@ -71,14 +71,7 @@ const searchForm = document.querySelector(".search-form");
 unhappyButton.addEventListener("click", () => searchForm.classList.remove("hidden") );
 
 
-
 const submitButton = document.querySelector("#submit-button")
-
-document.addEventListener("keypress", (e) => {
-  if (e.keyCode == 13) {
-    e.preventDefault();
-}
-})
 
 
 submitButton.addEventListener("click", (event) => {
@@ -107,81 +100,5 @@ submitButton.addEventListener("click", (event) => {
 
 })
   
-unhappyButton.addEventListener("click", () => searchForm.classList.remove("hidden") );
 
 
-
-const submitButton = document.querySelector("#submit-button")
-
-document.addEventListener("keypress", (e) => {
-  if (e.keyCode == 13) {
-    e.preventDefault();
-}
-})
-
-
-submitButton.addEventListener("click", (event) => {
-
- 
-  event.preventDefault();
-
-  let searchBarText = document.querySelector("#search-bar").value
-
-    //fetch statement has searchText variable and APIKEY variable 
-    fetch(
-      `https://api.giphy.com/v1/gifs/search?api_key=${APIKEY}&limit=1&q=${searchBarText}&rating=pg`
-    )
-    .then( response => response.json())
-    .then( (gif) => {
-      let giphyUrl = gif.data[0].images.downsized_large.url;
-      // assigning giphyUrl to image src 
-      image.src = giphyUrl;
-      //appending img to image tag
-      img.appendChild(image);
-      
-    })
-    .catch((error) => console.log(error));
-    // .catch(console.error);
-    // .catch((error) => console.log(error));
-
-})
-  
-unhappyButton.addEventListener("click", () => searchForm.classList.remove("hidden") );
-
-
-
-const submitButton = document.querySelector("#submit-button")
-
-document.addEventListener("keypress", (e) => {
-  if (e.keyCode == 13) {
-    e.preventDefault();
-}
-})
-
-
-submitButton.addEventListener("click", (event) => {
-
- 
-  event.preventDefault();
-
-  let searchBarText = document.querySelector("#search-bar").value
-
-    //fetch statement has searchText variable and APIKEY variable 
-    fetch(
-      `https://api.giphy.com/v1/gifs/search?api_key=${APIKEY}&limit=1&q=${searchBarText}&rating=pg`
-    )
-    .then( response => response.json())
-    .then( (gif) => {
-      let giphyUrl = gif.data[0].images.downsized_large.url;
-      // assigning giphyUrl to image src 
-      image.src = giphyUrl;
-      //appending img to image tag
-      img.appendChild(image);
-      
-    })
-    .catch((error) => console.log(error));
-    // .catch(console.error);
-    // .catch((error) => console.log(error));
-
-})
-  
