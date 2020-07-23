@@ -1,3 +1,5 @@
+
+
 //link button to dom
 const jokeButton = document.querySelector("#joke-button");
 const jokeContainer = document.querySelector(".joke-text");
@@ -6,6 +8,7 @@ let APIKEY = "ZbO2nno31mS8mT8mX8LL6XjUjYgZ9pvP";
 // selecting gif-container and creating an image element to house the Giphy gif 
 let img = document.querySelector(".gif-container");
 let image = document.createElement("img");
+const happyButton = document.querySelector("#happy-button");
 
 //on click, fetch from url
 fetch("https://icanhazdadjoke.com/", {
@@ -47,11 +50,14 @@ fetch("https://icanhazdadjoke.com/", {
     
 
 
+//clicking happyface button calls page reload
+document.getElementById("happy-button").addEventListener("click", event => {
+location.reload(true);
+});
 
-let happyButton = document.querySelector("#happy");
 
 // without () => for the location.reload() the function will constantly run automatically
-happyButton.addEventListener("click", () => location.reload());
+// happyButton.addEventListener("click", () => location.reload());
 
 let unhappyButton = document.querySelector("#unhappy");
 
@@ -63,7 +69,16 @@ unhappyButton.addEventListener("click", () => searchForm.classList.remove("hidde
 
 const submitButton = document.querySelector("#submit-button")
 
+document.addEventListener("keypress", (e) => {
+  if (e.keyCode == 13) {
+    e.preventDefault();
+}
+})
+
+
 submitButton.addEventListener("click", (event) => {
+
+ 
   event.preventDefault();
 
   let searchBarText = document.querySelector("#search-bar").value
@@ -84,7 +99,6 @@ submitButton.addEventListener("click", (event) => {
     .catch((error) => console.log(error));
     // .catch(console.error);
     // .catch((error) => console.log(error));
-
 
 })
   
