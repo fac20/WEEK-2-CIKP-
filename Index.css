@@ -14,10 +14,9 @@ body {
     flex-direction: column;
     align-items: center;
     font-size: 1.4rem;
-    line-height: 1.5;
-    
- cursor: url('blue\ logo\ .png'), auto;	
-
+    line-height: 1.5;	
+ /* caret-color:#9dbedc; */
+ cursor:grab;
  background:var(--back);
  color: var(--text-color);
  width:100vw;
@@ -30,6 +29,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    
 }
 
 h1 {
@@ -103,6 +103,7 @@ button:hover {
     max-height: 80vh;
     max-width: 80vw;
     margin-bottom: 2rem;
+    
     
     /* border : var(--border); */
 }
