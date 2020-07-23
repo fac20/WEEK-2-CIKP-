@@ -43,5 +43,8 @@ fetch("https://icanhazdadjoke.com/", {
   })
   .catch((error) => console.log(error));
 
-  
 
+let happyButton = document.querySelector("#happy")
+
+// without () => for the location.reload() the function will constantly run automatically
+happyButton.addEventListener("click", () => location.reload())
