@@ -2,9 +2,11 @@
 :root{
     --border: solid white 9px;
     --back:hsl(51, 100%, 69%);
+
     --text-color:  hsl(320 100% 38%);
     /* hsl(233, 67%, 14%); */
     --linear:linear-gradient(hsl(51, 100%, 69%), hsl(191, 97%, 36%));
+
 }
 
 body {
@@ -138,6 +140,9 @@ button:hover {
     width: 15em;
     text-align: center;
     margin-bottom: 0.5rem;
+
+    /* border : var(--border); */
+
     /* border : var(--border); */
 }
 
@@ -155,6 +160,7 @@ button:hover {
     display: none;
 
 }
+
 
 img{
     display:flex;
@@ -195,5 +201,4 @@ img{
     margin-top: 10vh;
 }
 }
-
 
