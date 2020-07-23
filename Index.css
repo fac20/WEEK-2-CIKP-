@@ -39,3 +39,7 @@ button {
     max-width: 19vw;
     align-items: center;
 }
+
+.hidden {
+    display: none;
+}

@@ -44,7 +44,13 @@ fetch("https://icanhazdadjoke.com/", {
   .catch((error) => console.log(error));
 
 
-let happyButton = document.querySelector("#happy")
+let happyButton = document.querySelector("#happy");
 
 // without () => for the location.reload() the function will constantly run automatically
-happyButton.addEventListener("click", () => location.reload())
+happyButton.addEventListener("click", () => location.reload());
+
+let unhappyButton = document.querySelector("#unhappy");
+
+const searchForm = document.querySelector(".search-form");
+
+unhappyButton.addEventListener("click", () => searchForm.classList.remove("hidden") );
