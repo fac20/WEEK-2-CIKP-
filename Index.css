@@ -64,17 +64,3 @@ button {
 
     border : var(--border);
 
-}
-
-.search-form {
-    margin-top: 1rem;
-    display: flex;
-    flex-direction: column;
-    max-width: 19vw;
-    align-items: center;
-}
-
-.hidden {
-    display: none;
-
-}
