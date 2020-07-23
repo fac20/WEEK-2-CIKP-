@@ -51,3 +51,13 @@ document.getElementById("happy-button").addEventListener("click", event => {
 location.reload(true);
 });
 
+let happyButton = document.querySelector("#happy");
+
+// without () => for the location.reload() the function will constantly run automatically
+happyButton.addEventListener("click", () => location.reload());
+
+let unhappyButton = document.querySelector("#unhappy");
+
+const searchForm = document.querySelector(".search-form");
+
+unhappyButton.addEventListener("click", () => searchForm.classList.remove("hidden") );
