@@ -45,7 +45,7 @@ fetch("https://icanhazdadjoke.com/", {
         //appending img to image tag
         img.appendChild(image);
         image.style.borderRadius = '20px';
-        image.style.boxShadow = '2px 2px 2px 2px #61ffe6';
+        image.style.boxShadow = '2px 2px 2px 2px hsl(233, 67%, 14%)';
        
       })
 

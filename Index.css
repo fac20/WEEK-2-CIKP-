@@ -1,7 +1,7 @@
 
 :root{
     --border: solid white 9px;
-    --back:hsl(229, 27%, 8%);
+    --back:hsl(51, 100%, 69%);
     --text-color: #9dbedc;
     --linear:linear-gradient(hsl(233, 67%, 14%), hsl(191, 67%, 46%));
 }
@@ -68,11 +68,9 @@ button {
     max-width: 20vw;
     text-align: center;
     margin-bottom: 0.5rem;
-<<<<<<< HEAD
 
-    border : var(--border);
+    /* border : var(--border); */
 
-=======
     /* border : var(--border); */
     font-family: 'Nunito Sans', sans-serif;
 }
@@ -89,4 +87,3 @@ button {
     display: none;
 
 }
->>>>>>> e2e9cccd65a6bd0094fb07b5957980f1e9b5606c
