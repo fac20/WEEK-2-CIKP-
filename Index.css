@@ -1,6 +1,6 @@
 
 :root{
-    --border: solid var(--linear) 9px;
+    --border: solid white 9px;
     --back:hsl(229, 27%, 8%);
     --text-color: #9dbedc;
     --linear:linear-gradient(pink, purple);
@@ -11,7 +11,6 @@ body {
     flex-direction: column;
     align-items: center;
 }
-
 
 .landing, .gif-joke-page {
     display: flex;
@@ -35,8 +34,8 @@ button {
     display:flex;
     justify-content: center;
     width:50vw;
-    max-height: 40vh;
-    max-width: 50vw;
+    max-height: 80vh;
+    max-width: 80vw;
     margin-bottom: 2rem;
     border : var(--border);
 }
@@ -48,6 +47,8 @@ button {
     width: 120px;
     height: 120px;
     animation: spin 2s linear infinite;
+    /*playing with loader visibility*/
+    visibility: visible;
   }
   
   @keyframes spin {
