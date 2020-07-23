@@ -9,6 +9,8 @@ let APIKEY = "ZbO2nno31mS8mT8mX8LL6XjUjYgZ9pvP";
 let img = document.querySelector(".gif-container");
 let image = document.createElement("img");
 const happyButton = document.querySelector("#happy-button");
+const loader = document.querySelector('#load-circle');
+console.log(loader)
 
 //on click, fetch from url
 fetch("https://icanhazdadjoke.com/", {
@@ -27,7 +29,6 @@ fetch("https://icanhazdadjoke.com/", {
   /* next then statement has dataObj.joke as searchText due to
    previous return statement. It is then followed by  the fetch statement for the Giphy API */
   .then((searchText) => {
-    
 
     //fetch statement has searchText variable and APIKEY variable 
     fetch(
@@ -37,11 +38,15 @@ fetch("https://icanhazdadjoke.com/", {
       .then((response) => response.json())
       // selecting pathway to gif image an assigning it to giphyUrl
       .then((gif) => {
+        loader.style.display = 'none';
         let giphyUrl = gif.data[0].images.downsized_large.url;
         // assigning giphyUrl to image src 
         image.src = giphyUrl;
         //appending img to image tag
         img.appendChild(image);
+        image.style.borderRadius = '20px';
+        image.style.boxShadow = '2px 2px 2px 2px #61ffe6';
+       
       })
 
       .catch(console.error);
