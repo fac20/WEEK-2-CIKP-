@@ -44,6 +44,7 @@ fetch("https://icanhazdadjoke.com/", {
         image.src = giphyUrl;
         //appending img to image tag
         img.appendChild(image);
+        image.alt ="it's a random gif"
         image.style.borderRadius = '20px';
         image.style.boxShadow = '2px 2px 2px 2px hsl(233, 67%, 14%)';
        
@@ -71,14 +72,7 @@ const searchForm = document.querySelector(".search-form");
 unhappyButton.addEventListener("click", () => searchForm.classList.remove("hidden") );
 
 
-
 const submitButton = document.querySelector("#submit-button")
-
-document.addEventListener("keypress", (e) => {
-  if (e.keyCode == 13) {
-    e.preventDefault();
-}
-})
 
 
 submitButton.addEventListener("click", (event) => {
@@ -106,4 +100,7 @@ submitButton.addEventListener("click", (event) => {
     // .catch((error) => console.log(error));
 
 })
+   
+
+
   
