@@ -71,8 +71,20 @@ const searchForm = document.querySelector(".search-form");
 unhappyButton.addEventListener("click", () => searchForm.classList.remove("hidden") );
 
 
+<<<<<<< HEAD
 const submitButton = document.querySelector("#submit-button")
 
+=======
+
+const submitButton = document.querySelector("#submit-button")
+
+document.addEventListener("keypress", (e) => {
+  if (e.keyCode == 13) {
+    e.preventDefault();
+}
+})
+
+>>>>>>> e4898e726ef665ce60e62c7e452e321c06ddc67f
 
 submitButton.addEventListener("click", (event) => {
 
@@ -99,6 +111,10 @@ submitButton.addEventListener("click", (event) => {
     // .catch((error) => console.log(error));
 
 })
+<<<<<<< HEAD
   
 
 
+=======
+  
+>>>>>>> e4898e726ef665ce60e62c7e452e321c06ddc67f
