@@ -2,7 +2,7 @@
 :root{
     --border: solid white 9px;
     --back:hsl(51, 100%, 69%);
-    --text-color: #9dbedc;
+    --text-color hsl(0, 0%, 1%);
     --linear:linear-gradient(hsl(233, 67%, 14%), hsl(191, 67%, 46%));
 }
 
@@ -68,11 +68,6 @@ button {
     max-width: 20vw;
     text-align: center;
     margin-bottom: 0.5rem;
-
-    /* border : var(--border); */
-
-    /* border : var(--border); */
-    font-family: 'Nunito Sans', sans-serif;
 }
 
 .search-form {
@@ -86,4 +81,12 @@ button {
 .hidden {
     display: none;
 
+}
+img{
+    max-height: 80vh;
+    max-width: 80vw;
+}
+.joke-text {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 1em;
 }
