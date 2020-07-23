@@ -31,7 +31,7 @@ fetch("https://icanhazdadjoke.com/", {
 
     //fetch statement has searchText variable and APIKEY variable 
     fetch(
-      `https://api.giphy.com/v1/gifs/search?api_key=${APIKEY}&limit=1&q=${searchText}`
+      `https://api.giphy.com/v1/gifs/search?api_key=${APIKEY}&limit=1&q=${searchText}&rating=pg`
     )
     
       .then((response) => response.json())
@@ -85,7 +85,7 @@ submitButton.addEventListener("click", (event) => {
 
     //fetch statement has searchText variable and APIKEY variable 
     fetch(
-      `https://api.giphy.com/v1/gifs/search?api_key=${APIKEY}&limit=1&q=${searchBarText}`
+      `https://api.giphy.com/v1/gifs/search?api_key=${APIKEY}&limit=1&q=${searchBarText}&rating=pg`
     )
     .then( response => response.json())
     .then( (gif) => {
