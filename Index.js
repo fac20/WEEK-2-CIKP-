@@ -1,6 +1,9 @@
+
+
 //link button to dom
 const jokeButton = document.querySelector("#joke-button");
 const jokeContainer = document.querySelector(".joke-text");
+const happyButton = document.querySelector("#happy-button");
 
 //on click, fetch from url
 fetch("https://icanhazdadjoke.com/", {
@@ -43,6 +46,10 @@ fetch("https://icanhazdadjoke.com/", {
   })
   .catch((error) => console.log(error));
 
+//clicking happyface button calls page reload
+document.getElementById("happy-button").addEventListener("click", event => {
+location.reload(true);
+});
 
 let happyButton = document.querySelector("#happy");
 
