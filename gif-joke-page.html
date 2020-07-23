@@ -4,26 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@600&display=swap" rel="font">
     <title>Your Virtual Dad Joke Service</title>
 </head>
 <body>
     <section class="gif-joke-page">
 
         <div class="gif-container">
-                <!-- <img src="ferrellDad.gif" alt="exampleGif">    -->
+            <div class="loader" id="load-circle"></div>
+
+                <!-- <img src="ferrellDad.gif" alt="exampleGif">  -->
+                <form>
+                    <!-- <input type='search' id='search'>
+                    <input type='submit' id='submit'> -->
+                    <output></output>
+                </form>  
         </div>
         
         <div class="joke-container">
+
             <p class="joke-text"></p>
+
+        <!-- <p class='joke'>Why did the man run around his bed? Because he was trying to catch up on his sleep!</p> -->
+
         </div>
 
         <div class="button-container">
-            <button type="button">:(</button>
-            <button type="button">:)</button>   
+
+            <button type="button" id="unhappy">:(</button>
+            <button type="button" id="happy-button">:)</button>   
+
         </div>
 
     </section>
 
+        <section>
+            <form class="search-form hidden">
+                <label for="search-bar">Search your funny gif</label>
+                <input type="text" id="search-bar">
+                <button type="button" id="submit-button">Submit</button>
+                
+            </form>
+        </section>
+            
 </body>
-<script src='index.js'></script>
+
+<script src="Index.js"></script>
+
 </html>
