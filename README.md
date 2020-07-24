@@ -22,7 +22,7 @@ Within the app the user will have two options.
 2. Random joke and a user searchable gif :exploding_head: 
 
 
-!(https://i.imgur.com/kVad3FR.png)
+![Picture of app](https://i.imgur.com/kVad3FR.png)
 
 
 
