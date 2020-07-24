@@ -172,6 +172,7 @@ img {
     text-align: center;
   }
   nav {
+    padding: 3rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -188,5 +189,18 @@ img {
   .landing,
   .gif-joke-page {
     margin-top: 10vh;
+  }
+}
+@media all and (max-width: 900px) {
+  .logo {
+    /* margin-top:25rem; */
+    width: 60vw;
+    margin: 0px;
+  }
+  nav {
+    padding-top:6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
