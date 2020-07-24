@@ -47,6 +47,7 @@ fetch("https://icanhazdadjoke.com/", {
         loader.style.display = "none";
         appendGif(gif);
         image.alt = "it's a random gif";
+        image.title = "it's a random gif"
         image.classList.add("box-style");
       })
 
