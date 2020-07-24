@@ -14,7 +14,7 @@ A dad joke and gif generator using two API's :rofl:
 
 ## INTRO
 
-KKWD? is an app to have dad jokes with a relevant gif in your poject at all times. Be the comedian of your dinner parties with KKWD?
+KKWD? is an app to have dad jokes with a relevant gif in your pocket at all times. Be the comedian of your dinner parties with KKWD?
 
 Within the app the user will have two options.
 
@@ -37,7 +37,7 @@ Within the app the user will have two options.
 2. User will click the button to be given a random joke and gif
 3. The user will be taken to a new page in with the joke will be displayed.
 4. If the user is happy with the joke and gif combination algorithm they can select the random button to be given another combo
-5. If the user woul like to search for a specific gif they will have the ability to search by clicking the search button.
+5. If the user would like to search for a specific gif they will have the ability to search by clicking the search button.
 
 ## User Stories
 
@@ -64,17 +64,17 @@ As a user, I want to:
 - Try not to push API keys up to GitHub (since anyone can see them there)
 
 ## Tech Stack
-VS Code
-Photoshop
-Zoom
-Jitsi
-Goggle Hangout
-Git
-Github
-Google
-FAC facilitators
-API's
-Terminal/Command Line
+- VS Code
+- Photoshop
+- Zoom
+- Jitsi
+- Goggle Hangout
+- Git
+- Github
+- Google
+- FAC facilitators
+- API's
+- Terminal/Command Line
 
 ## APIs Used
 [icanhazdadjoke](https://icanhazdadjoke.com/)  
