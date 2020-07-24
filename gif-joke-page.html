@@ -1,60 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Index.css">
-    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Index.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bangers&display=swap"
+      rel="stylesheet"
+    />
     <title>Your Virtual Dad Joke Service</title>
-</head>
-<body>
-<nav class='nav'>
-    <a href="index.html">
-    <img src='images/blue logo .png' class='logo' alt='image of logo'>
-</a>
-</nav>
-<main>
-    <section class="gif-joke-page">
-
+  </head>
+  <body>
+    <nav class="nav">
+      <a href="index.html">
+        <img src="images/blue logo .png" class="logo" alt="image of logo" />
+      </a>
+    </nav>
+    <main>
+      <section class="gif-joke-page">
         <div class="gif-container">
-            <div class="loader" id="load-circle"></div>
-
-                <!-- <img src="ferrellDad.gif" alt="exampleGif">  -->
-                <form>
-                    <!-- <input type='search' id='search'>
-                    <input type='submit' id='submit'> -->
-                    <output></output>
-                </form>  
+          <div class="loader" id="load-circle"></div>
         </div>
-        
+
         <div class="joke-container">
-
-            <p class="joke-text"></p>
-
-        <!-- <p class='joke'>Why did the man run around his bed? Because he was trying to catch up on his sleep!</p> -->
-
+          <p class="joke-text"></p>
         </div>
 
         <div class="button-container">
-
-            <button type="button" id="unhappy">SEARCH</button>
-            <button type="button" id="happy-button">RANDOM</button>   
-
+          <button type="button" id="button-reveal-search">SEARCH</button>
+          <button type="button" id="button-random">RANDOM</button>
         </div>
+      </section>
 
-    </section>
-
-        <section>
-            <form class="search-form hidden">
-                <label for="search-bar">Search your funny gif</label>
-                <input type="text" id="search-bar">
-                <button type="button" id="submit-button">Submit</button>
-                
-            </form>
-        </section>
+      <section>
+        <form class="search-form hidden">
+          <label for="search-bar">Search your funny gif</label>
+          <input type="text" id="search-bar" />
+          <button type="button" id="button-submit">Submit</button>
+        </form>
+      </section>
     </main>
-</body>
+  </body>
 
-<script src="Index.js"></script>
-
+  <script src="Index.js"></script>
 </html>
