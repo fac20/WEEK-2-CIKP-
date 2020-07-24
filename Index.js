@@ -79,3 +79,8 @@ submitButton.addEventListener("click", (event) => {
     })
     .catch((error) => console.log(error));
 });
+form.addEventListener("keydown", function(event) {
+  if (event.keyCode === 13) {
+    searchText;
+  }
+});
