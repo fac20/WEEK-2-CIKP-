@@ -23,6 +23,7 @@ body {
   width: 100vw;
   height: 100vh;
   font-family: "Bangers", cursive;
+
 }
 
 .nav {
@@ -102,7 +103,7 @@ button:hover {
 
 #search-bar {
   background: var(--search-bar-color);
-  border: var(--search-bar-color); solid 3px;
+  border: var(--search-bar-color) solid 3px;
   color: hsl(51, 100%, 89%);
   border-radius: 10px;
   text-align: center;
