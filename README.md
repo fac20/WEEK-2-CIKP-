@@ -10,7 +10,7 @@ See [week 2 schedule](https://founders-and-coders.gitbook.io/coursebook/curricul
 
 # [Knock Knock Whose Dad?]( https://fac20.github.io/WEEK-2-CIKP-/) Team CIKP
 
-A dad joke and gif generator using two API's :rolling_on_the_floor_laughing: 
+A dad joke and gif generator using two API's :rofl: 
 
 ## INTRO
 
@@ -22,7 +22,7 @@ Within the app the user will have two options.
 2. Random joke and a user searchable gif :exploding_head: 
 
 
-![](https://i.imgur.com/kVad3FR.png =500x)
+!(https://i.imgur.com/kVad3FR.png =500x)
 
 
 
