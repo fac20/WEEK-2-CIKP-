@@ -14,8 +14,11 @@ const image = document.createElement("img");
 
 function appendGif(obj) {
   let giphyUrl = obj.data[0].images.downsized_large.url;
-  // assigning giphyUrl to image src
+  let giphyTitle = obj.data[0].title;
+  // assigning giphyUrl to image src and relevant giphy title
   image.src = giphyUrl;
+  image.alt = giphyTitle;
+  image.title = giphyTitle;
   //appending image to gifContainer
   gifContainer.appendChild(image);
 }
@@ -46,8 +49,8 @@ fetch("https://icanhazdadjoke.com/", {
       .then((gif) => {
         loader.style.display = "none";
         appendGif(gif);
-        image.alt = "it's a random gif";
-        image.title = "it's a random gif"
+        // image.alt = "it's a random gif";
+        // image.title = "it's a random gif"
         image.classList.add("box-style");
       })
 
