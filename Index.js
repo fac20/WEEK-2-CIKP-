@@ -15,12 +15,25 @@ const image = document.createElement("img");
 function appendGif(obj) {
   let giphyUrl = obj.data[0].images.downsized_large.url;
   let giphyTitle = obj.data[0].title;
+  loader.style.display = "none";
   // assigning giphyUrl to image src and relevant giphy title
   image.src = giphyUrl;
   image.alt = giphyTitle;
   image.title = giphyTitle;
+  image.classList.add("box-style");
   //appending image to gifContainer
   gifContainer.appendChild(image);
+}
+
+function giphyFetch(searchString) {
+  fetch(
+    `https://api.giphy.com/v1/gifs/search?api_key=${APIKEY}&limit=1&q=${searchString}&rating=pg`
+  )
+    .then((response) => response.json())
+    .then((gif) => {
+      appendGif(gif);
+    })
+    .catch((error) => console.log(error));
 }
 
 //on load, fetch from url
@@ -40,23 +53,8 @@ fetch("https://icanhazdadjoke.com/", {
   /* next then statement has dataObj.joke as searchText due to
    previous return statement. It is then followed by  the fetch statement for the Giphy API */
   .then((searchText) => {
-    //fetch statement has searchText variable and APIKEY variable
-    fetch(
-      `https://api.giphy.com/v1/gifs/search?api_key=${APIKEY}&limit=1&q=${searchText}&rating=pg`
-    )
-      .then((response) => response.json())
-      // selecting pathway to gif image an assigning it to giphyUrl
-      .then((gif) => {
-        loader.style.display = "none";
-        appendGif(gif);
-        // image.alt = "it's a random gif";
-        // image.title = "it's a random gif"
-        image.classList.add("box-style");
-      })
-
-      .catch(console.error);
-  })
-  .catch((error) => console.log(error));
+    giphyFetch(searchText);
+  });
 
 //clicking random button calls page reload
 randomButton.addEventListener("click", (event) => {
@@ -71,14 +69,13 @@ submitButton.addEventListener("click", (event) => {
   event.preventDefault();
 
   const searchBarText = document.querySelector("#search-bar").value;
+  giphyFetch(searchBarText);
+});
 
-  //fetch statement has searchText variable and APIKEY variable
-  fetch(
-    `https://api.giphy.com/v1/gifs/search?api_key=${APIKEY}&limit=1&q=${searchBarText}&rating=pg`
-  )
-    .then((response) => response.json())
-    .then((gif) => {
-      appendGif(gif);
-    })
-    .catch((error) => console.log(error));
+searchForm.addEventListener("keydown", function (event) {
+  if (event.keyCode === 13) {
+    event.preventDefault();
+    const searchBarText = document.querySelector("#search-bar").value;
+    giphyFetch(searchBarText);
+  }
 });
