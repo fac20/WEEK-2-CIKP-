@@ -61,8 +61,10 @@ randomButton.addEventListener("click", (event) => {
   location.reload(true);
 });
 
-searchRevealButton.addEventListener("click", () =>
+searchRevealButton.addEventListener("click", () =>{
   searchForm.classList.remove("hidden")
+  document.location.href = "#search-form-id";
+}
 );
 
 submitButton.addEventListener("click", (event) => {
