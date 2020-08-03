@@ -2,7 +2,7 @@
 const jokeButton = document.querySelector("#joke-button");
 const jokeContainer = document.querySelector(".joke-text");
 const submitButton = document.querySelector("#button-submit");
-const APIKEY = "ZbO2nno31mS8mT8mX8LL6XjUjYgZ9pvP";
+// const APIKEY = "ZbO2nno31mS8mT8mX8LL6XjUjYgZ9pvP";
 const searchRevealButton = document.querySelector("#button-reveal-search");
 const randomButton = document.querySelector("#button-random");
 const searchForm = document.querySelector(".search-form");
