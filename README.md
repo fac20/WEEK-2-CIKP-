@@ -1,3 +1,4 @@
+# Note: API KEY HAS BEEN COMMENTED OUT.
 # [Founders and Coders](https://www.foundersandcoders.com/about/) FAC20 Week 2 Project :confetti_ball: :construction: 
 
 Each week we are asked to  build a project in teams of four to build a MVP using pair programming in 1.5 days. All work was carried out remotely during the year of Covid-19.
